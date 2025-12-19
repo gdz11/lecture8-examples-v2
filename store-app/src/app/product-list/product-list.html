@@ -1,0 +1,10 @@
+<h1>Product list</h1>
+
+
+@for(product of products(); track product.id){
+    <div class="product-item">
+        <h2>{{product.name}}</h2>
+        <div>{{product.description}}</div>
+        <div>Price: {{product.price | currency}}</div>
+    </div>
+}
