@@ -11,5 +11,6 @@ services:
         destination: /index.html
     envVars:
     - key: API_BASE_URL
+      value: http://localhost:3001
     autoDeployTrigger: commit
     rootDir: store-app
