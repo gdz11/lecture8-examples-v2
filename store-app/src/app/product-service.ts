@@ -10,6 +10,8 @@ export class ProductService {
   envConfigService = inject(EnvConfigService);
   http = inject(HttpClient);
 
+  
+
   get productsApiUrl(){
     return `${this.envConfigService.apiBaseUrl}/products`;
   }
